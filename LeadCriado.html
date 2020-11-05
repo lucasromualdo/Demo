@@ -51,7 +51,6 @@
 </head>
 
 <body>
-    <a href='./LeadCriado.html'>Oi</a>
     <div class="geral">
         <header style="background-color: rgb(0, 140, 80);">
             <span class="texto-topo">Cadastre um Lead</span>
@@ -61,39 +60,11 @@
         </header>
         <main style="color: black;">
             
-            <div id="loader" class="loader" style="display: none;"></div>
-            <section class="login">
-                <!-- topo info -->
-
-                <!-- Topo fim -->
-                <!-- Conteudo -->
-                <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" target="_blank" onsubmit="window.location">
-                    <fieldset>
-                    </fieldset>
-                    <h2 id="titulo">Lead</h2>
-                    <input type=hidden name="oid" value="00D2C0000004XOL">
-                    <input type=hidden name="retURL" value="https://www.unimedcg.com.br/SGC/Portal/">
-
-                    <!--  ----------------------------------------------------------------------  -->
-                    <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
-                    <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
-                    <!--  <input type="hidden" name="debug" value=1>                              -->
-                    <!--  <input type="hidden" name="debugEmail" value="cbcloud.dev@gmail.com">   -->
-                    <!--  ----------------------------------------------------------------------  -->
-
-                    <label for="first_name">Primeiro Nome</label><input id="first_name" maxlength="40" name="first_name"
-                        size="20" type="text"/><br>
-
-                    <label for="last_name">Sobrenome</label><input id="last_name" maxlength="80" name="last_name"
-                        size="20" type="text"/><br>
-
-                    <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20"
-                        type="text"/><br>
-
-                    <input type="submit" name="submit" style='width: 100%; padding: auto;'/>
-
-                </form>
-            </section>
+            <div style="text-align: center; width: 100%; min-height: 165px; margin: 130px 0 0 0;">
+                <h1 style="color:rgb(0, 140, 80);">Lead criado com sucesso!</h1>
+                <a href="./Unimed-BH.html" style="color:rgb(0, 140, 80);">Voltar</a>
+            </div>
+            
         </main>
         <!-- geral -->
 
