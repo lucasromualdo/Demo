@@ -37,6 +37,12 @@
         $(document).ready(function () {
             redirectToCustomLoginPageOrLoadPage(loadPage);
         });
+        const redirectNow = () => {
+            window.location = './LeadCriado.html';
+        }
+        const redirect = () => {
+            setTimeout(redirectNow, 500);
+        }
     </script>
     <style type="text/css" src="./Unimed-BH_files/css2"></style>
     <style type="text/css">
@@ -44,6 +50,7 @@
             align-items: center;
             vertical-align: middle;
         }
+
         #titulo {
             color: black;
         }
@@ -57,17 +64,19 @@
             <span class="texto-topo">Cadastre um Lead</span>
             <span class="titulo1"></span>
             <span class="titulo2"></span>
-            <span style='align-self: flex-start;'><img style="width: auto important; height: 50px;" src="./Unimed-BH_files/Unime verdinho.png" alt=""></span>
+            <span style='align-self: flex-start;'><img style="width: auto important; height: 50px;"
+                    src="./Unimed-BH_files/Unime verdinho.png" alt=""></span>
         </header>
         <main style="color: black;">
-            
+
             <div id="loader" class="loader" style="display: none;"></div>
             <section class="login">
                 <!-- topo info -->
 
                 <!-- Topo fim -->
                 <!-- Conteudo -->
-                <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" target="_blank" onsubmit="window.location">
+                <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST"
+                    target="_blank" onsubmit="redirect();">
                     <fieldset>
                     </fieldset>
                     <h2 id="titulo">Lead</h2>
@@ -82,15 +91,15 @@
                     <!--  ----------------------------------------------------------------------  -->
 
                     <label for="first_name">Primeiro Nome</label><input id="first_name" maxlength="40" name="first_name"
-                        size="20" type="text"/><br>
+                        size="20" type="text" /><br>
 
                     <label for="last_name">Sobrenome</label><input id="last_name" maxlength="80" name="last_name"
-                        size="20" type="text"/><br>
+                        size="20" type="text" /><br>
 
                     <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20"
-                        type="text"/><br>
+                        type="text" /><br>
 
-                    <input type="submit" name="submit" style='width: 100%; padding: auto;'/>
+                    <input type="submit" name="submit" style='width: 100%; padding: auto;' />
 
                 </form>
             </section>
